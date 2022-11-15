@@ -31,7 +31,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import flipsign from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-flipsign@deno/mod.js';
+import flipsign from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-flipsign@v0.0.7-deno/mod.js';
 ```
 
 #### flipsign( x, y )
@@ -80,7 +80,7 @@ z = flipsign( 0.0, -1.0 );
 
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import flipsign from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-flipsign@deno/mod.js';
+import flipsign from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-flipsign@v0.0.7-deno/mod.js';
 
 var x;
 var y;
