@@ -31,6 +31,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import flipsign from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-flipsign@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-flipsign/tags). For example,
+
+```javascript
 import flipsign from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-flipsign@v0.0.7-deno/mod.js';
 ```
 
@@ -80,7 +85,7 @@ z = flipsign( 0.0, -1.0 );
 
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import flipsign from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-flipsign@v0.0.7-deno/mod.js';
+import flipsign from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-flipsign@deno/mod.js';
 
 var x;
 var y;
