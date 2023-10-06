@@ -35,38 +35,30 @@ limitations under the License.
 
 > Return a [double-precision floating-point number][ieee754] with the magnitude of `x` and the sign of `x*y`.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-special-flipsign
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-flipsign = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-flipsign@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var flipsign = require( 'path/to/vendor/umd/math-base-special-flipsign/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-flipsign@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.flipsign;
-})();
-</script>
+var flipsign = require( '@stdlib/math-base-special-flipsign' );
 ```
 
 #### flipsign( x, y )
@@ -113,14 +105,9 @@ z = flipsign( 0.0, -1.0 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-flipsign@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var flipsign = require( '@stdlib/math-base-special-flipsign' );
 
 var x;
 var y;
@@ -134,11 +121,6 @@ for ( i = 0; i < 100; i++ ) {
     z = flipsign( x, y );
     console.log( 'x: %d, y: %d => %d', x, y, z );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -147,7 +129,92 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/flipsign.h"
+```
+
+#### stdlib_base_flipsign( x, y )
+
+Returns a [double-precision floating-point number][ieee754] with the magnitude of `x` and the sign of `x*y`.
+
+```c
+double v = stdlib_base_flipsign( -3.0, 10.0 );
+// returns -3.0
+
+double v = stdlib_base_flipsign( -3.0, -1.0 );
+// returns 3.0
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` number from which to derive a magnitude.
+-   **y**: `[in] double` number from which to derive a sign.
+
+```c
+double stdlib_base_flipsign( const double x, const double y );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/flipsign.h"
+#include <stdio.h>
+
+int main( void ) {
+    const double x[] = { 3.0, -3.0, 0.0, 0.0/0.0 };
+
+    double y;
+    int i;
+    for ( i = 0; i < 4; i++ ) {
+        y = stdlib_base_flipsign( x[ i ], -3.0 );
+        printf( "flipsign(%lf, %lf) = %lf\n", x[ i ], -3.0, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -236,7 +303,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/copysign]: https://github.com/stdlib-js/math-base-special-copysign/tree/umd
+[@stdlib/math/base/special/copysign]: https://github.com/stdlib-js/math-base-special-copysign
 
 <!-- </related-links> -->
 
