@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import flipsign from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-flipsign@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-flipsign/tags). For example,
+
+```javascript
 import flipsign from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-flipsign@v0.2.1-esm/index.mjs';
 ```
 
@@ -96,7 +101,7 @@ z = flipsign( 0.0, -1.0 );
 <script type="module">
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import flipsign from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-flipsign@v0.2.1-esm/index.mjs';
+import flipsign from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-flipsign@esm/index.mjs';
 
 var x;
 var y;
