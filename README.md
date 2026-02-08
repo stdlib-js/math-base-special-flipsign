@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import flipsign from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-flipsign@esm/index.mjs';
+import flipsign from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-flipsign@v0.2.3-esm/index.mjs';
 ```
 
 #### flipsign( x, y )
@@ -97,7 +97,7 @@ z = flipsign( 0.0, -1.0 );
 
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@esm/index.mjs';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@esm/index.mjs';
-import flipsign from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-flipsign@esm/index.mjs';
+import flipsign from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-flipsign@v0.2.3-esm/index.mjs';
 
 var opts = {
     'dtype': 'float64'
