@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import flipsign from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-flipsign@deno/mod.js';
+import flipsign from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-flipsign@v0.2.3-deno/mod.js';
 ```
 
 #### flipsign( x, y )
@@ -92,7 +92,7 @@ z = flipsign( 0.0, -1.0 );
 ```javascript
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@deno/mod.js';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@deno/mod.js';
-import flipsign from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-flipsign@deno/mod.js';
+import flipsign from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-flipsign@v0.2.3-deno/mod.js';
 
 var opts = {
     'dtype': 'float64'
